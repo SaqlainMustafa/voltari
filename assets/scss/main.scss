@@ -3,6 +3,7 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import  "variables";
+@import "home";
 
 
 
@@ -25,4 +26,3 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
-

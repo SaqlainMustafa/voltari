@@ -1,4 +1,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500&display=swap");
+.home-container .home-bg {
+  background-image: url("../images/home-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.home-container .energy-container {
+  margin-top: 310px;
+}
+.home-container .energy-container .energy-heading {
+  color: #5659A6;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 52px;
+}
+.home-container .energy-container .energy-para {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4A4A4A;
+  margin-top: 68px;
+  line-height: 21px;
+}
+.home-container .energy-container .horizental {
+  color: #000000;
+  margin: 43px 0 35px 0;
+  border: 1px solid #000000;
+}
+.home-container .energy-container .energy-button {
+  margin-top: 66px;
+}
+.home-container .energy-container .energy-button .energy-btn {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  line-height: 19px;
+  outline: none;
+  color: #ffffff;
+  padding: 10px 25px 10px 25px;
+}
+@media (max-width: 767.98px) {
+  .home-container .energy-container {
+    margin-top: 50px;
+  }
+}
+.home-container .charger-container {
+  background-color: #F0F0F0;
+  padding-top: 105px;
+  padding-bottom: 85px;
+  margin-top: 353px;
+}
+.home-container .charger-container .charge-box {
+  max-width: 285px;
+  margin: 0 auto;
+  text-align: center;
+}
+.home-container .charger-container .charge-box .charge-heading {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2E3292;
+}
+.home-container .charger-container .charge-box .charge-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 22px;
+  color: #626262;
+}
+.home-container .charger-container .charge-box .charge-button {
+  margin-top: 44px;
+}
+.home-container .charger-container .charge-box .charge-button .charge-btn {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 10px 24px 10px 24px;
+  color: #4A4A4A;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media (max-width: 767.98px) {
+  .home-container .charger-container .charge-box {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .home-container .charger-container {
+    margin-top: 50px;
+  }
+}
+.home-container .chat-container {
+  background-color: #ffffff;
+  padding-top: 151px;
+  padding-bottom: 181px;
+}
+.home-container .chat-container .chat-box {
+  max-width: 201px;
+  margin: 0 auto;
+  text-align: center;
+}
+.home-container .chat-container .circle {
+  width: 118px;
+  height: 118px;
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+.home-container .chat-container .chat-heading {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2E3292;
+  margin-top: 48px;
+}
+.home-container .chat-container .chat-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #4A4A4A;
+  margin-top: 6px;
+}
+.home-container .chat-container .chat-button {
+  margin-top: 27px;
+}
+.home-container .chat-container .chat-button .chat-btn {
+  background-color: #626262;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 6px 35px 6px 35px;
+  outline: none;
+  border: none;
+}
+@media (max-width: 767.98px) {
+  .home-container .chat-container .chat-box {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .home-container .chat-container {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
