@@ -9,8 +9,16 @@
         height: 100vh;
     }
 
-    .energy-container{
-        margin-top: 310px;
+    .energy-container {
+        margin-top: 50px;
+
+        @include media-breakpoint-up(md) {      
+            margin-top: 310px;
+        }
+
+        .energy-section {
+            max-width: 918px;
+        }
 
         .energy-heading {
             color: $blue;
@@ -50,17 +58,27 @@
         }
     }
 
-    @include media-breakpoint-down(md) {
-        .energy-container {
-            margin-top: 50px;
-        }
-    }
-
     .charger-container {
         background-color: $grey94;
         padding-top: 105px;
         padding-bottom: 85px;
-        margin-top: 353px;
+        margin-top: 50px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 353px;
+        }
+
+        .charge-cols {
+            &:not(:last-child) {
+                .charge-box {
+                    margin: 0 auto;
+
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
 
         .charge-box {
             max-width: 285px;
@@ -96,24 +114,29 @@
                 }
             }
         }
-
-        @include media-breakpoint-down(md) {
-            .charge-box {
-                margin-bottom: 50px;
-            }
-        }
-    }
-
-    @include media-breakpoint-down(md) {
-        .charger-container {
-            margin-top: 50px;
-        }
     }
 
     .chat-container {
         background-color: $white;
-        padding-top: 151px;
-        padding-bottom: 181px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 151px;
+            padding-bottom: 181px;
+        }
+
+        .chat-cols {
+            &:not(:last-child) {
+                .chat-box {
+                    margin: 0 auto;
+
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
 
         .chat-box {
             max-width: 201px;
@@ -161,18 +184,6 @@
                 outline: none;
                 border: none;
             }
-        }
-
-        @include media-breakpoint-down(md) {
-            .chat-box {
-                margin-bottom: 70px;
-            }
-        }
-    }
-    @include media-breakpoint-down(md) {
-        .chat-container {
-            padding-top: 50px; 
-            padding-bottom: 0;
         }
     }
 }
