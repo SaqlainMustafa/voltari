@@ -16,15 +16,20 @@
             margin-top: 310px;
         }
 
-        .energy-section {
-            max-width: 918px;
-        }
+        // .energy-section {
+        //     max-width: 918px;
+        // }
 
         .energy-heading {
             color: $blue;
-            font-size: 44px;
+            font-size: 35px;
             font-weight: $font600;
             line-height: 52px;
+
+            @include media-breakpoint-up(md) {      
+                font-size: 44px;
+                
+            }
         }
 
         .energy-para {
