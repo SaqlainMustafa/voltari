@@ -153,6 +153,32 @@
   }
 }
 
+.header .navbar {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.25) 100%);
+}
+.header .navbar .navbar-logo {
+  max-width: 100%;
+  width: 190px;
+}
+.header .navbar .nav-item {
+  margin-right: 34px;
+}
+.header .navbar .nav-item .nav-link {
+  color: #4A4A4A;
+  font-weight: 400;
+}
+.header .navbar .contact-btn {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 27px;
+}
+
+.footer {
+  background-color: #4A4A4A;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,55 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/scss/_mixins.scss" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <div class="home-container">
-        <div class="container-fluid home-bg">
+        <div class="home-bg">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="navbar-logo"src="/assets/images/voltari-header-logo.png" alt="main logo"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Charge Points</a>
+                                </li>
 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Electrical Services</a>
+                                </li>
+
+                                <li>
+                                    <a href="contact.html" class="btn contact-btn" type="submit">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
         </div>
+
+        <!--End Header and main banner-->
+
         <div class="container energy-container">
             <div class="col-lg-10">
                 <h2 class="energy-heading">Smart energy services for domestic properties</h2>
-                <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic properties Smart energy 
+                <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic
+                    properties Smart energy
                     services for domestic properties Smart energy services for domestic properties</p>
                 <hr class="horizental">
-                <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic properties</p>
+                <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic
+                    properties</p>
                 <div class="energy-button">
                     <button type="button" class="btn energy-btn">Enquire Now</button>
                 </div>
@@ -34,7 +72,8 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="charge-box">
                             <h3 class="charge-heading">EV charge points</h3>
-                            <p class="charge-para">Smart energy services for domestic properties Smart energy services for domestic properties</p>
+                            <p class="charge-para">Smart energy services for domestic properties Smart energy services
+                                for domestic properties</p>
                             <div class="charge-button">
                                 <button type="button" class="btn charge-btn">See More</button>
                             </div>
@@ -43,7 +82,8 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="charge-box">
                             <h3 class="charge-heading">OZEV Grant</h3>
-                            <p class="charge-para">Smart energy services for domestic properties Smart energy services for domestic properties</p>
+                            <p class="charge-para">Smart energy services for domestic properties Smart energy services
+                                for domestic properties</p>
                             <div class="charge-button">
                                 <button type="button" class="btn charge-btn">See More</button>
                             </div>
@@ -52,7 +92,8 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="charge-box">
                             <h3 class="charge-heading">Electrical Services</h3>
-                            <p class="charge-para">Smart energy services for domestic properties Smart energy services for domestic properties</p>
+                            <p class="charge-para">Smart energy services for domestic properties Smart energy services
+                                for domestic properties</p>
                             <div class="charge-button">
                                 <button type="button" class="btn charge-btn">See More</button>
                             </div>
@@ -65,7 +106,7 @@
 
         <div class="chat-container">
             <div class="container">
-                <div class="row" >
+                <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="chat-box">
                             <div class="circle">
@@ -105,15 +146,18 @@
                 </div>
             </div>
         </div>
-
-
-
-
-        
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- start footer section-->
+
+    <footer class="footer">
+        <div class="row">
+            
+        </div>
+    </footer>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
