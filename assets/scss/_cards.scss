@@ -1,82 +1,50 @@
 .card-container {
     background-color: $grey94;
-    
-    // .team-container {
-    //     padding-top: 122px;
-    //     padding-bottom: 298px;
-
-    //     .team-detail {
-
-    //         .team-heading {
-    //             font-size: 44px;
-    //             font-weight: $font600;
-    //             line-height: 51px;
-    //             color: $darkblue;
-    //         }
-
-    //         .team-horizatal {
-    //             max-width: 466px;
-    //             border: 1px solid;
-    //             margin-top: 25px;
-    //             border: 1px solid;
-    //             background: linear-gradient(90deg, #98CE5A 5.13%, #73CE5A 23.07%, #69CD5E 27.55%, #4FCA69 35.62%, #25C77B 45.48%, #00C48B 53.55%, #0B9E8C 59.83%, #17778E 67%, #215890 74.17%, #284291 81.35%, #2C3591 88.52%, #2E3192 94.8%);
-    //         }
-    //     }
-    // }
-
-    // .card {
-    //     max-width: 295px;
-    //     padding: 17px 17px 20px 17px;
-    //     background: rgba(255, 255, 255, 0.85);
-    //     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    //     border-radius: 6px;
-    //     margin-top: 40px;
-
-    //     .card-body {
-    //         padding: 0;
-
-    //         .card-title {
-    //             font-size: 26px;
-    //             font-weight: $font400;
-    //             line-height: 30px;
-    //             margin-top: 17px;
-    //         }
-
-    //         .card-text {
-    //             font-size: 18px;
-    //             font-weight: $font400;
-    //             line-height: 21px;
-    //             font-style: italic;
-    //         }
-    //     }
-    // }
-    // .card-2 {
-    //     background-color: $primary;
-
-    //     .card-body-detail {
-    //         color: $white;
-    //     }
-    // }
 
     .team-container {
         padding-top: 122px;
         padding-bottom: 298px;
+        max-width: 1030px;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .card-parent {
+            display: flex;
+            grid-column-gap: 72px;
+
+            @include media-breakpoint-down(md) {
+                flex-wrap: wrap;
+            }
+        }
         
         .card-detail {
 
             .card-main-heading {
+                position: relative;
                 font-size: 44px;
                 font-weight: $font600;
                 line-height: 51px;
                 color: $darkblue;
-            }
+                padding-bottom: 25px;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 466px;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient(90deg, rgba(153,207,91,1) 0%, rgba(44,200,121,1) 25%, rgba(22,123,142,1) 50%, rgba(47,50,147,1) 75%);
 
-            .team-horizental {
-                max-width: 466px;
-                border: 1px solid;
-                margin-top: 25px;
-                border: 1px solid;
-                background: linear-gradient(90deg, #98CE5A 5.13%, #73CE5A 23.07%, #69CD5E 27.55%, #4FCA69 35.62%, #25C77B 45.48%, #00C48B 53.55%, #0B9E8C 59.83%, #17778E 67%, #215890 74.17%, #284291 81.35%, #2C3591 88.52%, #2E3192 94.8%);
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                    }
+    
+                }
             }
         }
     }
@@ -85,9 +53,9 @@
         background: rgba(255, 255, 255, 0.85);
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 6px;
-        max-width: 295px;
         padding: 17px 17px 17px 17px;
         margin-top: 40px;
+        width: 100%;
         // margin: 0 auto;
 
         .card-heading {

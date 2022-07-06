@@ -11,11 +11,12 @@
 
     .mission-container {
         background-color: $grey94;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding-top: 66px;
         padding-bottom: 54px;
 
         .mission-left-content {
+            position: relative;
+            max-width: 483px;
 
             .mission-heading {
                 font-size: 44px;
@@ -33,11 +34,21 @@
             }
 
             .mission-sub-heading-2 {
+                position: relative;
                 font-size: 26px;
                 font-weight: $font400;
                 line-height: 30px;
-                margin-top: 35px;
                 color: $darkblue;
+                padding-top: 68px;
+            }
+
+            .mission-sub-heading-2::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                top: 33px;
+                background: linear-gradient(90deg, rgba(153,207,91,1) 0%, rgba(44,200,121,1) 25%, rgba(22,123,142,1) 50%, rgba(47,50,147,1) 75%);
 
             }
 
@@ -86,6 +97,19 @@
             padding-bottom: 202px;
         }
 
+        .mission-detail-container {
+            max-width: 900px;
+            margin: 0 auto;
+
+            .mission-1 {
+                padding-top: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
         .about-main-heading {
             font-size: 44px;
             font-weight: $font600;
@@ -98,23 +122,11 @@
             }
         }
 
-        .about-cols {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
         .about-detail {
             position: relative;
             display: flex;
             justify-content: space-between;
-
-            .about-detail::after {
-                content: '';
-                position: absolute;
-                height: 1px;
-                width: 100%;
-                background: linear-gradient(90deg, rgba(153,207,91,1) 0%, rgba(44,200,121,1) 25%, rgba(22,123,142,1) 50%, rgba(47,50,147,1) 75%);
-            }
+            padding-top: 88px;
 
             @include media-breakpoint-down(md) {
                 display: block;
@@ -140,12 +152,28 @@
                 color: $darkblue;
             }
         }
+
+        .about-detail::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 63px;
+            background: linear-gradient(90deg, rgba(153,207,91,1) 0%, rgba(44,200,121,1) 25%, rgba(22,123,142,1) 50%, rgba(47,50,147,1) 75%);
+
+            @include media-breakpoint-down(md) {
+                left: 0;
+            }
+        }
     }
 
     .electric-container {
         background-color: $grey94;
-        padding-top: 66px;
-        padding-bottom: 54px;
+        padding: 66px 75px 54px 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 40px 0 40px 0;
+        }
 
         .electric-left-content {
 
@@ -158,10 +186,14 @@
         }
 
         .electric-right-content {
-            max-width: 928px;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 50px;
+                text-align: center;
+            }
 
             .electric-para {
-                font-size: 35px;
+                font-size: 23px;
                 font-weight: $font600;
                 line-height: 52px;
                 color: $darkblack;
@@ -176,12 +208,12 @@
                 font-size: 26px;
                 font-weight: $font400;
                 line-height: 30px;
-                float: none;
-                margin: 47px 100px 0 0;
+                float: right;
                 color: $darkgrey;
-
+                padding: 20px 30px 0 0;
+                
                 @include media-breakpoint-up(md) {
-                    float: right;
+                    padding: 47px 30px 0 0;
                 }
             }
         }
