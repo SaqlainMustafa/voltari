@@ -2,9 +2,19 @@
     .navbar {
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.25) 100%);
 
+        @include media-breakpoint-up(md) {      
+            padding: 23px 60px 23px 115px;
+        }
+
         .navbar-logo {
             max-width: 100%;
             width: 190px;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: unset;
+            }
         }
 
         .nav-item {
@@ -14,6 +24,18 @@
                 color: $grey;
                 font-weight: $font400;
             }
+        }
+
+        .contact-us-list {
+            margin-top: 8px;
+            margin-bottom: 8px;
+
+            @include media-breakpoint-up(md) {      
+                margin-left: 8px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            
         }
 
         .contact-btn {

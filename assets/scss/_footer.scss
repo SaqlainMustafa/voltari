@@ -1,3 +1,110 @@
 .footer {
     background-color: $grey;
+    padding: 49px 15px 33px 15px;
+    background-image: url(../images/footer-bg-logo.png);
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(md) {      
+        padding: 49px 100px 33px 100px;
+    }
+
+    .footer-logo-container {
+        .footer-logo-v {
+            width: 94px;
+        }
+
+        .footer-logo {
+            margin-left: -18px;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        color: $white;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-up(md) {      
+            justify-content: space-around;
+        }
+        
+        .page-links {
+            @include media-breakpoint-down(md) {      
+                flex-basis: 50%;
+            }
+            
+        }
+
+        .link-heading {
+            margin-bottom: 0;
+            font-weight: $font600;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+
+        .footer-list {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                margin-bottom: 6px;
+            }
+
+            .footer-link {
+                color: $white;
+                text-decoration: none;
+                font-weight: $font400;
+                font-size: 12px;
+                line-height: 14px;
+
+                &:hover {
+                    color: #13C682;
+                }
+            }
+        }
+    }
+
+    .social-copy-section {
+        margin-top: 55px;
+
+        .copy-content {
+            color: $white;
+            font-size: 12px;
+            line-height: 14.06px;
+            font-weight: $font400;
+            margin-bottom: 0;
+
+            a {
+                color: $white;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            grid-column-gap: 22px;
+            justify-content: center;
+
+            @include media-breakpoint-up(md) {      
+                justify-content: flex-end;
+            }
+
+            figure {
+                margin-bottom: 0;
+                width: 30px;
+                height: 30px;
+                background: #2F2F2F;
+                display: grid;
+                border-radius: 50%;
+                place-items: center;
+            }
+
+            a {
+                &:nth-child(2) {
+                    figure {
+                        background: $white;
+                    }
+                }
+            }
+        }
+    }
 }
