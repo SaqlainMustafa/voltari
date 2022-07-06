@@ -1,0 +1,106 @@
+// .blog-cards-container {
+//     margin-top: 70px;
+
+//     @include media-breakpoint-up(md) {
+//         margin-top: 148px;
+//     }
+//     .blog-box {
+//         margin-top: 30px;
+
+//         @include media-breakpoint-up(md) {
+//             margin-top: 84px;
+//         }
+//     }
+    
+//     .blog-card {
+//         background-image: url('../images/blog-card.png');
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         max-width: 400px;
+//         padding: 52px 49px 52px 47px;
+//         text-align: center;
+//         margin: 0 auto;
+
+//         .blog-para {
+//             font-size: 16px;
+//             font-weight: $font400;
+//             line-height: 18px;
+//             color: $white;
+//         }
+
+//         .blog-heading {
+//             font-size: 26px;
+//             font-weight: $font400;
+//             line-height: 30px;
+//             color: $white;
+//         }
+//     }
+// }
+
+.blog-cards-container {
+    margin-top: 70px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 148px;
+    }
+
+    .blog-box {
+        margin-top: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 84px;
+        }
+    }
+
+    .blog-card {
+        max-width: 400px;
+        margin: 0 auto;
+
+        > p {
+            font-size: 16px;
+            font-weight: $font400;
+            line-height: 18px;
+            margin-top: 21px;
+            text-align: center;
+            color: $darkgrey;
+        }
+
+        .blog-card-img {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-responsive {
+                width: 100%;
+                // height: 153px;
+            }
+
+            .blog-detail {
+                position: absolute;
+                top: 0;
+                text-align: center;
+                transform: translateY(50%);
+                display: grid;
+                place-items: center;
+                color: $white;
+
+                .blog-para {
+                    font-size: 16px;
+                    font-weight: $font400;
+                    line-height: 18px;
+                    color: $white;
+                }
+                    
+                .blog-heading {
+                    font-size: 26px;
+                    font-weight: $font400;
+                    line-height: 30px;
+                    color: $white;
+                }
+            }
+
+        }
+    }
+}

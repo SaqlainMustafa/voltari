@@ -1,0 +1,25 @@
+.slider {
+    margin-top: 60px;
+
+    .carousel-indicators {
+
+        .slider-btn {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+    }
+
+    span {
+
+        i {
+            background-color: #ffffff;
+            color: $black;
+            width: 25px;
+            height: 25px;
+            display: grid;
+            align-items: center;
+            border-radius: 50%;
+        }
+    }
+}

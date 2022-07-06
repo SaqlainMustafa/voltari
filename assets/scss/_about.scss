@@ -97,12 +97,24 @@
                 margin-bottom: 114px;
             }
         }
+
+        .about-cols {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .about-detail {
             position: relative;
             display: flex;
-            margin: 0 auto;
-            max-width: 900px;
-            justify-content: space-evenly;
+            justify-content: space-between;
+
+            .about-detail::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                background: linear-gradient(90deg, rgba(153,207,91,1) 0%, rgba(44,200,121,1) 25%, rgba(22,123,142,1) 50%, rgba(47,50,147,1) 75%);
+            }
 
             @include media-breakpoint-down(md) {
                 display: block;
