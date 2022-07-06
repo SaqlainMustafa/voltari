@@ -196,9 +196,12 @@
 }
 .about-container .mission-container {
   background-color: #F0F0F0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 66px;
   padding-bottom: 54px;
+}
+.about-container .mission-container .mission-left-content {
+  position: relative;
+  max-width: 483px;
 }
 .about-container .mission-container .mission-left-content .mission-heading {
   font-size: 44px;
@@ -214,11 +217,20 @@
   color: #2E3292;
 }
 .about-container .mission-container .mission-left-content .mission-sub-heading-2 {
+  position: relative;
   font-size: 26px;
   font-weight: 400;
   line-height: 30px;
-  margin-top: 35px;
   color: #2E3292;
+  padding-top: 68px;
+}
+.about-container .mission-container .mission-left-content .mission-sub-heading-2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 33px;
+  background: linear-gradient(90deg, rgb(153, 207, 91) 0%, rgb(44, 200, 121) 25%, rgb(22, 123, 142) 50%, rgb(47, 50, 147) 75%);
 }
 .about-container .mission-container .mission-left-content .mission-para {
   font-size: 16px;
@@ -255,6 +267,16 @@
     padding-bottom: 202px;
   }
 }
+.about-container .about-detail-container .mission-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-container .about-detail-container .mission-detail-container .mission-1 {
+  padding-top: 0;
+}
+.about-container .about-detail-container .mission-detail-container .mission-1::after {
+  display: none;
+}
 .about-container .about-detail-container .about-main-heading {
   font-size: 44px;
   font-weight: 600;
@@ -267,21 +289,11 @@
     margin-bottom: 114px;
   }
 }
-.about-container .about-detail-container .about-cols {
-  max-width: 900px;
-  margin: 0 auto;
-}
 .about-container .about-detail-container .about-detail {
   position: relative;
   display: flex;
   justify-content: space-between;
-}
-.about-container .about-detail-container .about-detail .about-detail::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(90deg, rgb(153, 207, 91) 0%, rgb(44, 200, 121) 25%, rgb(22, 123, 142) 50%, rgb(47, 50, 147) 75%);
+  padding-top: 88px;
 }
 @media (max-width: 767.98px) {
   .about-container .about-detail-container .about-detail {
@@ -303,19 +315,39 @@
   line-height: 30px;
   color: #2E3292;
 }
+.about-container .about-detail-container .about-detail::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 63px;
+  background: linear-gradient(90deg, rgb(153, 207, 91) 0%, rgb(44, 200, 121) 25%, rgb(22, 123, 142) 50%, rgb(47, 50, 147) 75%);
+}
+@media (max-width: 767.98px) {
+  .about-container .about-detail-container .about-detail::after {
+    left: 0;
+  }
+}
 .about-container .electric-container {
   background-color: #F0F0F0;
-  padding-top: 66px;
-  padding-bottom: 54px;
+  padding: 66px 75px 54px 0;
+}
+@media (max-width: 767.98px) {
+  .about-container .electric-container {
+    padding: 40px 0 40px 0;
+  }
 }
 .about-container .electric-container .electric-left-content .electric-bg-img .electric-img {
   width: 100%;
 }
-.about-container .electric-container .electric-right-content {
-  max-width: 928px;
+@media (max-width: 767.98px) {
+  .about-container .electric-container .electric-right-content {
+    margin-top: 50px;
+    text-align: center;
+  }
 }
 .about-container .electric-container .electric-right-content .electric-para {
-  font-size: 35px;
+  font-size: 23px;
   font-weight: 600;
   line-height: 52px;
   color: #313131;
@@ -330,13 +362,13 @@
   font-size: 26px;
   font-weight: 400;
   line-height: 30px;
-  float: none;
-  margin: 47px 100px 0 0;
+  float: right;
   color: #626262;
+  padding: 20px 30px 0 0;
 }
 @media (min-width: 768px) {
   .about-container .electric-container .electric-right-content .writer-name {
-    float: right;
+    padding: 47px 30px 0 0;
   }
 }
 .about-container .chat-container {
@@ -411,27 +443,53 @@
 .card-container .team-container {
   padding-top: 122px;
   padding-bottom: 298px;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .card-container .team-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+.card-container .team-container .card-parent {
+  display: flex;
+  grid-column-gap: 72px;
+}
+@media (max-width: 767.98px) {
+  .card-container .team-container .card-parent {
+    flex-wrap: wrap;
+  }
 }
 .card-container .team-container .card-detail .card-main-heading {
+  position: relative;
   font-size: 44px;
   font-weight: 600;
   line-height: 51px;
   color: #2E3292;
+  padding-bottom: 25px;
 }
-.card-container .team-container .card-detail .team-horizental {
-  max-width: 466px;
-  border: 1px solid;
-  margin-top: 25px;
-  border: 1px solid;
-  background: linear-gradient(90deg, #98CE5A 5.13%, #73CE5A 23.07%, #69CD5E 27.55%, #4FCA69 35.62%, #25C77B 45.48%, #00C48B 53.55%, #0B9E8C 59.83%, #17778E 67%, #215890 74.17%, #284291 81.35%, #2C3591 88.52%, #2E3192 94.8%);
+.card-container .team-container .card-detail .card-main-heading::after {
+  content: "";
+  position: absolute;
+  width: 466px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgb(153, 207, 91) 0%, rgb(44, 200, 121) 25%, rgb(22, 123, 142) 50%, rgb(47, 50, 147) 75%);
+}
+@media (max-width: 767.98px) {
+  .card-container .team-container .card-detail .card-main-heading::after {
+    width: 100%;
+  }
 }
 .card-container .cards {
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  max-width: 295px;
   padding: 17px 17px 17px 17px;
   margin-top: 40px;
+  width: 100%;
 }
 .card-container .cards .card-heading {
   font-size: 26px;
