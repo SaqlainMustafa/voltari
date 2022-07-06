@@ -2,18 +2,38 @@
 
     .home-bg {
         background-image: url('../images/home-bg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
-        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 1021px;
+        width: 100%;
+    }
+
+    .v-shape-bg {
+        // background-image: url('../images/home-v-bg-transparent.png');
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: center right;
+        position: relative;
+
+        img {
+            height: 1260px;
+            position: absolute;
+            width: 100%;
+            max-width: 63%;
+            right: 0;
+            top: 98px;
+            z-index: -1;
+        }
     }
 
     .energy-container {
-        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
 
         @include media-breakpoint-up(md) {      
-            margin-top: 310px;
+            padding-top: 310px;
+            padding-bottom: 353px;
         }
 
         // .energy-section {
@@ -36,7 +56,7 @@
             font-size: 18px;
             font-weight: $font400;
             color: $grey;
-            margin-top: 68px;
+            margin-top: 35px;
             line-height: 21px;
         }
 
@@ -67,11 +87,8 @@
         background-color: $grey94;
         padding-top: 105px;
         padding-bottom: 85px;
-        margin-top: 50px;
-
-        @include media-breakpoint-up(md) {
-            margin-top: 353px;
-        }
+        position: relative;
+        z-index: -2;
 
         .charge-cols {
             &:not(:last-child) {

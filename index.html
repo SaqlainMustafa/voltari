@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap/scss/_mixins.scss" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/wow.js/css/libs/animate.css">
+
 </head>
 
 <body>
@@ -48,21 +50,26 @@
         </div>
 
         <!--End Header and main banner-->
-
-        <div class="container energy-container">
-            <div class="col-lg-10">
-                <div class="energy-section">
-                    <h2 class="energy-heading">Smart energy services for domestic properties</h2>
-                    <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic properties Smart energy 
-                        services for domestic properties Smart energy services for domestic properties</p>
-                    <hr class="horizental">
-                    <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic properties</p>
-                    <div class="energy-button">
-                        <button type="button" class="btn energy-btn">Enquire Now</button>
+        <div class="v-shape-container">
+            <div class="v-shape-bg wow fadeInRightBig" data-wow-offset="50">
+                <img src="assets/images/home-v-bg-transparent.png" alt=""> 
+            </div>
+        </div>
+            <div class="container energy-container">
+                <div class="col-lg-10">
+                    <div class="energy-section wow fadeInLeftBig" data-wow-offset="50">
+                        <h2 class="energy-heading">Smart energy services for domestic properties</h2>
+                        <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic properties Smart energy 
+                            services for domestic properties Smart energy services for domestic properties</p>
+                        <hr class="horizental">
+                        <p class="energy-para">Smart energy services for domestic properties Smart energy services for domestic properties</p>
+                        <div class="energy-button">
+                            <button type="button" class="btn energy-btn">Enquire Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        
 
         <div class="charger-container">
             <div class="container">
@@ -149,6 +156,9 @@
     <!-- start footer section-->
 
     <footer class="footer">
+        <div class="footer-transparent-bg">
+            <img class="wow fadeInRightBig" data-wow-offset="50" src="assets/images/footer-bg-logo.png" alt="">
+        </div>
         <div class="row">
             <div class="col-md-3">
                 <!-- <a class="footer-logo-container" href="index.html">
@@ -167,28 +177,28 @@
                     <div class="page-links">
                         <p class="link-heading">About Us</p>
                         <ul class="footer-list">
-                            <li><a class="footer-link"href="about.html">About Us</a></li>
-                            <li><a class="footer-link"href="about.html">Our Team</a></li>
-                            <li><a class="footer-link"href="about.html">Grants</a></li>
-                            <li><a class="footer-link"href="about.html">Blog</a></li>
+                            <li><a class="footer-link" href="about.html">About Us</a></li>
+                            <li><a class="footer-link" href="team.html">Our Team</a></li>
+                            <li><a class="footer-link" href="#">Grants</a></li>
+                            <li><a class="footer-link" href="#">Blog</a></li>
                         </ul>
                     </div>
 
                     <div class="page-links">
                         <p class="link-heading">Charge Points</p>
                         <ul class="footer-list">
-                            <li><a class="footer-link" href="about.html">Domestic</a></li>
-                            <li><a class="footer-link" href="about.html">Commercial</a></li>
-                            <li><a class="footer-link" href="about.html">Public</a></li>
+                            <li><a class="footer-link" href="#">Domestic</a></li>
+                            <li><a class="footer-link" href="#">Commercial</a></li>
+                            <li><a class="footer-link" href="#">Public</a></li>
                         </ul>
                     </div>
 
                     <div class="page-links">
                         <p class="link-heading">Electrical Services</p>
                         <ul class="footer-list">
-                            <li><a class="footer-link" href="about.html">Domestic</a></li>
-                            <li><a class="footer-link" href="about.html">Commercial</a></li>
-                            <li><a class="footer-link" href="about.html">Public</a></li>
+                            <li><a class="footer-link" href="#">Domestic</a></li>
+                            <li><a class="footer-link" href="#">Commercial</a></li>
+                            <li><a class="footer-link" href="#">Public</a></li>
                         </ul>
                     </div>
 
@@ -237,6 +247,10 @@
         </div>
     </footer>
 
+
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

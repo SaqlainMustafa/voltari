@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap/scss/_mixins.scss" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/wow.js/css/libs/animate.css">
+
 </head>
 <body>
     <div class="about-container">
@@ -17,7 +19,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html">
-                            <img class="navbar-logo"src="/assets/images/voltari-header-logo.png" alt="main logo"/>
+                            <img class="navbar-logo"src="assets/images/voltari-header-logo.png" alt="main logo"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -25,19 +27,17 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Charge Points</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Electrical Services</a>
                                 </li>
-
-                                <li>
+                                <li class="contact-us-list">
                                     <a href="contact.html" class="btn contact-btn" type="submit">Contact Us</a>
                                 </li>
                             </ul>
@@ -47,7 +47,7 @@
             </header>
         </div>
         <div class="mission-container">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6">
                         <div class="mission-left-content">
@@ -63,10 +63,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-5 mt-md-0">
                         <div class="mission-right-content">
                             <div class="mission-right">
-                                <img class="misson-img" src="./assets/images/mission-bg.png">
+                                <img class="misson-img wow fadeInRightBig" data-wow-offset="50" src="./assets/images/mission-bg.png">
                             </div>
                         </div>
                     </div>
@@ -176,9 +176,102 @@
         </div>
     </div>
 
+    <!-- start footer section-->
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- <a class="footer-logo-container" href="index.html">
+                    <img class="footer-logo-v "src="assets/images/footer-v.png" alt="footer logo v"/>
+                    <img class="footer-logo "src="assets/images/footer-logo.png" alt="footer logo"/>
+                </a> -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-logo mw-100" style="width: 190px"src="assets/images/voltari-header-logo.png" alt="main logo"/>
+                </a>
+            </div>
+            <div class="col-md-9 mt-5 mt-md-0">
+                <div class="footer-links">
+                    <div class="page-links">
+                        <p class="link-heading">Home</p>
+                    </div>
+                    <div class="page-links">
+                        <p class="link-heading">About Us</p>
+                        <ul class="footer-list">
+                            <li><a class="footer-link" href="about.html">About Us</a></li>
+                            <li><a class="footer-link" href="team.html">Our Team</a></li>
+                            <li><a class="footer-link" href="#">Grants</a></li>
+                            <li><a class="footer-link" href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page-links">
+                        <p class="link-heading">Charge Points</p>
+                        <ul class="footer-list">
+                            <li><a class="footer-link" href="#">Domestic</a></li>
+                            <li><a class="footer-link" href="#">Commercial</a></li>
+                            <li><a class="footer-link" href="#">Public</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page-links">
+                        <p class="link-heading">Electrical Services</p>
+                        <ul class="footer-list">
+                            <li><a class="footer-link" href="#">Domestic</a></li>
+                            <li><a class="footer-link" href="#">Commercial</a></li>
+                            <li><a class="footer-link" href="#">Public</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page-links">
+                        <p class="link-heading">Contact Us</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="social-copy-section">
+            <div class="row">
+                <div class="col-md-9">
+                    <p class="copy-content">
+                        ©2022 Voltari™ | A registered installation division of Beboc®. All rights reserved. <a href="#">Privacy Policy,</a> <a href="#">Cookies Policy,</a> and <a href="#">Terms of Use</a>.
+                    </p>
+                </div>
+                <div class="col-md-3 mt-5 mt-md-0">
+                    <div class="social-links">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/images/twitter.png" alt="twitter icon">
+                            </figure>
+                        </a>
+
+                        <a href="#">
+                            <figure>
+                                <img src="assets/images/facrbook.svg" alt="twitter icon">
+                            </figure>
+                        </a>
+
+                        <a href="#">
+                            <figure>
+                                <img src="assets/images/linkdin.svg" alt="twitter icon">
+                            </figure>
+                        </a>
+
+                        <a href="#">
+                            <figure>
+                                <img src="assets/images/instagram.svg" alt="twitter icon">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

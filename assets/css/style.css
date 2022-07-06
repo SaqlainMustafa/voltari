@@ -42,18 +42,32 @@
 
 .home-container .home-bg {
   background-image: url("../images/home-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 1021px;
+  width: 100%;
+}
+.home-container .v-shape-bg {
+  position: relative;
+}
+.home-container .v-shape-bg img {
+  height: 1260px;
+  position: absolute;
+  width: 100%;
+  max-width: 63%;
+  right: 0;
+  top: 98px;
+  z-index: -1;
 }
 .home-container .energy-container {
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   .home-container .energy-container {
-    margin-top: 310px;
+    padding-top: 310px;
+    padding-bottom: 353px;
   }
 }
 .home-container .energy-container .energy-heading {
@@ -71,7 +85,7 @@
   font-size: 18px;
   font-weight: 400;
   color: #4A4A4A;
-  margin-top: 68px;
+  margin-top: 35px;
   line-height: 21px;
 }
 .home-container .energy-container .horizental {
@@ -98,12 +112,8 @@
   background-color: #F0F0F0;
   padding-top: 105px;
   padding-bottom: 85px;
-  margin-top: 50px;
-}
-@media (min-width: 768px) {
-  .home-container .charger-container {
-    margin-top: 353px;
-  }
+  position: relative;
+  z-index: -2;
 }
 .home-container .charger-container .charge-cols:not(:last-child) .charge-box {
   margin: 0 auto;
@@ -206,17 +216,18 @@
 }
 
 .about-container .about-bg {
-  background-image: url("../images/home-bg.png");
+  background-image: url("../images/about-main-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 1021px;
 }
 .about-container .mission-container {
   background-color: #F0F0F0;
   padding-top: 66px;
   padding-bottom: 54px;
+  position: relative;
 }
 .about-container .mission-container .mission-left-content {
   position: relative;
@@ -273,8 +284,22 @@
   color: #ffffff;
   padding: 10px 25px 10px 25px;
 }
+@media (max-width: 767.98px) {
+  .about-container .mission-container .mission-right-content {
+    height: 400px;
+    position: relative;
+  }
+}
 .about-container .mission-container .mission-right-content .mission-right .misson-img {
-  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  width: 35%;
+}
+@media (max-width: 767.98px) {
+  .about-container .mission-container .mission-right-content .mission-right .misson-img {
+    width: 75%;
+  }
 }
 .about-container .about-detail-container {
   padding-top: 50px;
@@ -362,7 +387,6 @@
 @media (max-width: 767.98px) {
   .about-container .electric-container .electric-right-content {
     margin-top: 50px;
-    text-align: center;
   }
 }
 .about-container .electric-container .electric-right-content .electric-para {
@@ -455,13 +479,21 @@
 .footer {
   background-color: #4A4A4A;
   padding: 49px 15px 33px 15px;
-  background-image: url(../images/footer-bg-logo.png);
-  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .footer {
     padding: 49px 100px 33px 100px;
   }
+}
+.footer .footer-transparent-bg {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: -8;
 }
 .footer .footer-logo-container .footer-logo-v {
   width: 94px;
@@ -520,6 +552,9 @@
 }
 .footer .social-copy-section .copy-content a {
   color: #ffffff;
+}
+.footer .social-copy-section .copy-content a:hover {
+  color: #13C682;
 }
 .footer .social-copy-section .social-links {
   display: flex;
@@ -587,7 +622,7 @@
 }
 @media (max-width: 767.98px) {
   .card-container .team-container .card-detail .card-main-heading::after {
-    width: 100%;
+    width: 85%;
   }
 }
 .card-container .cards {
