@@ -3,6 +3,7 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import  "variables";
+@import "mixins";
 @import "header";
 @import "home";
 @import "about";
@@ -36,4 +37,8 @@ body {
 
 a {
     transition: all 0.3s;
+}
+
+.btn {
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out
 }

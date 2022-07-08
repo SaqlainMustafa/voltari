@@ -1,3 +1,5 @@
+@import "mixins";
+
 .header {
     .navbar {
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.25) 100%);
@@ -39,11 +41,8 @@
         }
 
         .contact-btn {
-            background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
-            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 50px;
-            color: $white;
-            padding: 10px 27px;
+            @include gradiant-btn;
         }
     }
 }
+

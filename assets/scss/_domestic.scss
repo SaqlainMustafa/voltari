@@ -188,12 +188,9 @@
             margin-top: 27px;
 
             .chat-btn {
+                @include gradiant-btn;
                 background-color: $darkgrey;
-                color: $white;
-                border-radius: 50px;
                 padding: 6px 35px 6px 35px;
-                outline: none;
-                border: none;
             }
         }
     }

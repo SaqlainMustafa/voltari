@@ -23,7 +23,7 @@
             max-width: 63%;
             right: 0;
             top: 98px;
-            z-index: -1;
+            z-index: 0;
         }
     }
 
@@ -69,15 +69,8 @@
         .energy-button {
             margin-top: 66px;
             .energy-btn {
-                background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
-                box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 50px;
-                font-size: 16px;
-                font-weight: $font400;
-                border: none;
-                line-height: 19px;
-                outline: none;
-                color: $white;
+
+                @include gradiant-btn;
                 padding: 10px 25px 10px 25px;
             }
         }
@@ -87,8 +80,11 @@
         background-color: $grey94;
         padding-top: 105px;
         padding-bottom: 85px;
-        position: relative;
-        z-index: -2;
+
+        .charger-container-row {
+            position: relative;
+            z-index: 1;
+        }
 
         .charge-cols {
             &:not(:last-child) {
@@ -126,13 +122,11 @@
                 margin-top: 44px;
 
                 .charge-btn {
+
+                    @include gradiant-btn;
                     background-color: $white;
-                    border-radius: 50px;
                     padding: 10px 24px 10px 24px;
                     color: $grey;
-                    font-size: 16px;
-                    font-weight: $font400;
-                    line-height: 18px;
                 }
             }
         }
@@ -199,12 +193,10 @@
             margin-top: 27px;
 
             .chat-btn {
+
+                @include gradiant-btn;
                 background-color: $darkgrey;
-                color: $white;
-                border-radius: 50px;
                 padding: 6px 35px 6px 35px;
-                outline: none;
-                border: none;
             }
         }
     }

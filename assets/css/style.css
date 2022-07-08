@@ -33,11 +33,18 @@
   }
 }
 .header .navbar .contact-btn {
-  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   color: #ffffff;
   padding: 10px 27px;
+  background: #99CF5B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.header .navbar .contact-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  color: #ffffff;
 }
 
 .home-container .home-bg {
@@ -58,7 +65,7 @@
   max-width: 63%;
   right: 0;
   top: 98px;
-  z-index: -1;
+  z-index: 0;
 }
 .home-container .energy-container {
   padding-top: 50px;
@@ -97,23 +104,28 @@
   margin-top: 66px;
 }
 .home-container .energy-container .energy-button .energy-btn {
-  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
   font-size: 16px;
   font-weight: 400;
-  border: none;
   line-height: 19px;
-  outline: none;
-  color: #ffffff;
   padding: 10px 25px 10px 25px;
+}
+.home-container .energy-container .energy-button .energy-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  color: #ffffff;
 }
 .home-container .charger-container {
   background-color: #F0F0F0;
   padding-top: 105px;
   padding-bottom: 85px;
+}
+.home-container .charger-container .charger-container-row {
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 .home-container .charger-container .charge-cols:not(:last-child) .charge-box {
   margin: 0 auto;
@@ -145,13 +157,21 @@
   margin-top: 44px;
 }
 .home-container .charger-container .charge-box .charge-button .charge-btn {
-  background-color: #ffffff;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  padding: 10px 24px 10px 24px;
-  color: #4A4A4A;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 19px;
+  background-color: #ffffff;
+  padding: 10px 24px 10px 24px;
+  color: #4A4A4A;
+}
+.home-container .charger-container .charge-box .charge-button .charge-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  color: #ffffff;
 }
 .home-container .chat-container {
   background-color: #ffffff;
@@ -207,12 +227,20 @@
   margin-top: 27px;
 }
 .home-container .chat-container .chat-button .chat-btn {
-  background-color: #626262;
-  color: #ffffff;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  background-color: #626262;
   padding: 6px 35px 6px 35px;
-  outline: none;
-  border: none;
+}
+.home-container .chat-container .chat-button .chat-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  color: #ffffff;
 }
 
 .about-container .about-bg {
@@ -273,16 +301,18 @@
   margin-top: 91px;
 }
 .about-container .mission-container .mission-left-content .mission-button .mission-btn {
-  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
   font-size: 16px;
   font-weight: 400;
-  border: none;
   line-height: 19px;
-  outline: none;
+}
+.about-container .mission-container .mission-left-content .mission-button .mission-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
   color: #ffffff;
-  padding: 10px 25px 10px 25px;
 }
 @media (max-width: 767.98px) {
   .about-container .mission-container .mission-right-content {
@@ -468,12 +498,20 @@
   margin-top: 27px;
 }
 .about-container .chat-container .chat-button .chat-btn {
-  background-color: #626262;
-  color: #ffffff;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  background-color: #626262;
   padding: 6px 35px 6px 35px;
-  outline: none;
-  border: none;
+}
+.about-container .chat-container .chat-button .chat-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  color: #ffffff;
 }
 
 .footer {
@@ -728,12 +766,17 @@
   }
 }
 .grants-container .services-container .service-button .service-btn {
-  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  padding: 8px 25px;
-  outline: none;
-  border: none;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.grants-container .services-container .service-button .service-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
   color: #ffffff;
 }
 
@@ -1039,12 +1082,20 @@
   margin-top: 27px;
 }
 .domestic-container .chat-container .chat-button .chat-btn {
-  background-color: #626262;
-  color: #ffffff;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  color: #ffffff;
+  padding: 10px 27px;
+  background: #99CF5B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  background-color: #626262;
   padding: 6px 35px 6px 35px;
-  outline: none;
-  border: none;
+}
+.domestic-container .chat-container .chat-button .chat-btn:hover {
+  background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+  color: #ffffff;
 }
 
 * {
@@ -1067,6 +1118,10 @@ body {
 
 a {
   transition: all 0.3s;
+}
+
+.btn {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
