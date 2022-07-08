@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/scss/_mixins.scss" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/wow.js/css/libs/animate.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-bg">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="navbar-logo"src="assets/images/voltari-header-logo.png" alt="main logo"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Charge Points</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Electrical Services</a>
+                                </li>
+                                <li class="contact-us-list">
+                                    <a href="contact.html" class="btn contact-btn" type="submit">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- End Header -->
+
+            <div class="contact-form-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="message-container">
+                                <h2 class="contact-main-heading">Leave us a Message</h2>
+                                <hr class="form-horizental">
+                                <p class="form-para">If you would like to leave us a message, we’ll do our best to get back to you within the next 24 hours.</p>
+                                <p class="form-para-2">(*Mandatory)</p>
+
+                                <form action="/action_page.php">
+                                    <label for="email" class="label-names">Business Name</label>
+                                    <input type="text" class="form-control input-box" id="name" name="name">
+                                    <label for="email" class="label-names">Your Name</label>
+                                    <input type="text" class="form-control input-box" id="name" name="name">
+                                    <label for="email" class="label-names">Email Address</label>
+                                    <input type="email" class="form-control input-box" id="email" name="email">
+                                    <label for="email" class="label-names">Contact Number</label>
+                                    <input type="number" class="form-control input-box" id="number" name="number">
+                                    <label for="comment" class="label-names">Your Message*</label>
+                                    <textarea class="form-control comment-box" rows="5" id="comment" name="text"></textarea>
+                                    <p class="Contact-preference">Contact preference</p>
+                                    <div class="check-btns">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                            <label class="form-check-label" for="radio1">Option 1</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+                                            <label class="form-check-label" for="radio1">Option 1</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
