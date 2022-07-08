@@ -1448,6 +1448,15 @@
   color: #ffffff;
   margin-bottom: 16px;
 }
+.form-container .contact-form-container .message-container form {
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
 .form-container .contact-form-container .message-container form .label-names {
   color: #ffffff;
   font-size: 18px;
@@ -1456,9 +1465,11 @@
   margin-top: 11px;
 }
 .form-container .contact-form-container .message-container form .input-box {
+  height: 37px;
   border-radius: 6px;
 }
 .form-container .contact-form-container .message-container form .comment-box {
+  height: 154px;
   border-radius: 6px;
 }
 .form-container .contact-form-container .message-container form .Contact-preference {
@@ -1467,6 +1478,70 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+}
+.form-container .contact-form-container .message-container form .form-button {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+}
+.form-container .contact-form-container .message-container form .form-button .form-btn {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 9px 25px 9px 25px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: #4A4A4A;
+}
+.form-container .contact-form-container .message-container form .container {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form-container .contact-form-container .message-container form .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-container .contact-form-container .message-container form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.form-container .contact-form-container .message-container form .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.form-container .contact-form-container .message-container form .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.form-container .contact-form-container .message-container form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form-container .contact-form-container .message-container form .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.form-container .contact-form-container .message-container form .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 * {
