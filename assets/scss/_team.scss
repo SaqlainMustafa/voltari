@@ -58,6 +58,15 @@
         width: 100%;
         // margin: 0 auto;
 
+        &:nth-child(2) {
+            background-color: $primary;
+
+            .card-heading,
+            .card-para {
+                color: $white;
+            }
+        }
+
         .card-heading {
             font-size: 26px;
             font-weight: $font400;

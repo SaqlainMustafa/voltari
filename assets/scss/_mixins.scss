@@ -7,6 +7,8 @@
     font-size: 16px;
     font-weight: $font400;
     line-height: 19px;
+    border: 0;
+    outline: 0;
 
     &:hover {
         background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
