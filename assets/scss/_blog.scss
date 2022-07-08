@@ -1,8 +1,10 @@
 .blog-cards-container {
     margin-top: 70px;
+    margin-bottom: 50px;
 
     @include media-breakpoint-up(md) {
         margin-top: 148px;
+        margin-bottom: 134px;
     }
 
     .blog-box {
@@ -11,6 +13,15 @@
         @include media-breakpoint-up(md) {
             margin-top: 84px;
         }
+    }
+
+    .blog-coools {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+        opacity: 0.45;
+        border-radius: 6px;
     }
 
     .blog-card {
@@ -26,15 +37,23 @@
             color: $darkgrey;
         }
 
-        .blog-card-img {
+        .blog-card-detail {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            .blog-img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(59.99deg, #99CF5B -2.9%, #2CC879 30.02%, #167B8E 67.49%, #2F3293 104.48%);
+                opacity: 0.45;
+                border-radius: 6px;
+            }
+
             .img-responsive {
                 width: 100%;
-                
             }
 
             .blog-detail {

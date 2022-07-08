@@ -16,12 +16,17 @@
         width: 100%;
         top: 0;
         z-index: -8;
+
+        .fadeInRightBig {
+            max-width: 100%;
+        }
     }
 
     .footer-logo-container {
         .footer-logo-v {
             width: 94px;
         }
+    
 
         .footer-logo {
             margin-left: -18px;
