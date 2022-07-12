@@ -1353,12 +1353,11 @@
 }
 @media (max-width: 767.98px) {
   .form-container .form-bg {
-    height: 100%;
+    height: auto;
   }
 }
 .form-container .contact-form-container {
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .form-container .contact-form-container {
@@ -1404,15 +1403,6 @@
   color: #ffffff;
   margin-bottom: 16px;
 }
-.form-container .contact-form-container .message-container form {
-  /* Hide the browser's default radio button */
-  /* Create a custom radio button */
-  /* On mouse-over, add a grey background color */
-  /* When the radio button is checked, add a blue background */
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  /* Show the indicator (dot/circle) when checked */
-  /* Style the indicator (dot/circle) */
-}
 .form-container .contact-form-container .message-container form .label-names {
   color: #ffffff;
   font-size: 18px;
@@ -1451,18 +1441,20 @@
   border-radius: 50px;
   color: #4A4A4A;
 }
-.form-container .contact-form-container .message-container form .container {
-  display: block;
+.form-container .contact-form-container .message-container form .checks-container {
+  width: 0;
   position: relative;
-  margin-bottom: 12px;
+  padding-left: 25px;
+  margin-right: 45px;
+  color: #ffffff;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-.form-container .contact-form-container .message-container form .container input {
+.form-container .contact-form-container .message-container form .checks-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1482,10 +1474,10 @@
   position: absolute;
   display: none;
 }
-.form-container .contact-form-container .message-container form .container input:checked ~ .checkmark:after {
+.form-container .contact-form-container .message-container form .checks-container input:checked ~ .checkmark:after {
   display: block;
 }
-.form-container .contact-form-container .message-container form .container .checkmark:after {
+.form-container .contact-form-container .message-container form .checks-container .checkmark:after {
   top: 3px;
   left: 3px;
   width: 12px;
@@ -1499,6 +1491,12 @@
   padding: 53px 51px 71px 52px;
   opacity: 0.9;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 767.98px) {
+  .form-container .contact-form-container .touch-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .form-container .contact-form-container .touch-container .touch-heading {
   font-size: 30px;
@@ -1521,22 +1519,33 @@
   line-height: 18px;
   color: #4A4A4A;
   margin-top: 38px;
+  margin-bottom: 53px;
 }
-.form-container .contact-form-container .touch-container .touch-mail-circle {
+.form-container .contact-form-container .touch-container .touch-icons-content {
+  display: flex;
+  padding: 0;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .form-container .contact-form-container .touch-container .touch-icons-content {
+    padding-left: 27px;
+  }
+}
+.form-container .contact-form-container .touch-container .touch-icons-content .icons-circle {
   width: 30px;
   height: 30px;
   background: #434343;
   border-radius: 50%;
+  cursor: pointer;
   display: grid;
   place-items: center;
 }
-.form-container .contact-form-container .touch-container .touch-phone-circle {
-  width: 30px;
-  height: 30px;
-  background: #434343;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+.form-container .contact-form-container .touch-container .touch-icons-content .touch-icons-text .touch-text {
+  margin-left: 12px;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .footer {

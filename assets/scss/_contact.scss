@@ -9,13 +9,12 @@
         height: 1363PX;
 
         @include media-breakpoint-down(md) {      
-            height: 100%;  
+            height: auto;  
         }
     }
 
     .contact-form-container {
         margin-top: 50px;
-        margin-bottom: 50px;
 
         @include media-breakpoint-up(md) {      
             margin-top: 155px;
@@ -110,27 +109,26 @@
                     }
                 }
 
-                .container {
-                    display: block;
+                .checks-container {
+                    width: 0;
                     position: relative;
-                    // padding-left: 35px;
-                    margin-bottom: 12px;
+                    padding-left: 25px;
+                    margin-right: 45px;
+                    color: $white;
                     cursor: pointer;
-                    font-size: 22px;
+                    font-size: 16px;
                     -webkit-user-select: none;
                     -moz-user-select: none;
                     -ms-user-select: none;
                     user-select: none;
                   }
                   
-                  /* Hide the browser's default radio button */
-                  .container input {
+                  .checks-container input {
                     position: absolute;
                     opacity: 0;
                     cursor: pointer;
                   }
-                  
-                  /* Create a custom radio button */
+
                   .checkmark {
                     position: absolute;
                     top: 0;
@@ -142,30 +140,17 @@
                     border-radius: 50%;
                   }
                   
-                  /* On mouse-over, add a grey background color */
-                //   .container:hover input ~ .checkmark {
-                //     background-color: #ccc;
-                //   }
-                  
-                  /* When the radio button is checked, add a blue background */
-                //   .container input:checked ~ .checkmark {
-                //     background-color: #2196F3;
-                //   }
-                  
-                  /* Create the indicator (the dot/circle - hidden when not checked) */
                   .checkmark:after {
                     content: "";
                     position: absolute;
                     display: none;
                   }
                   
-                  /* Show the indicator (dot/circle) when checked */
-                  .container input:checked ~ .checkmark:after {
+                  .checks-container input:checked ~ .checkmark:after {
                     display: block;
                   }
                   
-                  /* Style the indicator (dot/circle) */
-                  .container .checkmark:after {
+                  .checks-container .checkmark:after {
                     top: 3px;
                     left: 3px;
                     width: 12px;
@@ -182,6 +167,11 @@
             padding: 53px 51px 71px 52px;
             opacity: 0.9;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+            @include media-breakpoint-down(md) {      
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
 
             .touch-heading {
                 font-size: 30px;
@@ -206,24 +196,38 @@
                 line-height: 18px;
                 color: $grey;
                 margin-top: 38px;
+                margin-bottom: 53px;
             }
 
-            .touch-mail-circle {
-                width: 30px;
-                height: 30px;
-                background: $arsenicgrey;
-                border-radius: 50%;
-                display: grid;
-                place-items: center;
-            }
+            .touch-icons-content {
+                display: flex;
+                padding: 0;
+                margin-top: 15px;
 
-            .touch-phone-circle {
-                width: 30px;
-                height: 30px;
-                background: $arsenicgrey;
-                border-radius: 50%;
-                display: grid;
-                place-items: center;
+                @include media-breakpoint-up(md) {      
+                    padding-left: 27px;  
+                }
+
+                .icons-circle {
+                    width: 30px;
+                    height: 30px;
+                    background: $arsenicgrey;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: grid;
+                    place-items: center;
+                }
+
+                .touch-icons-text {
+
+                    .touch-text {
+                        margin-left: 12px;
+                        margin-top: 5px;
+                        font-size: 12px;
+                        font-weight: $font400;
+                        line-height: 18px;
+                    }
+                }
             }
         }
     }
